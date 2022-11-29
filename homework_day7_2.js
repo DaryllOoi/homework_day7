@@ -4,9 +4,9 @@
  Use a ternary operator to assign to a variable called gender the string values "male" or "female".
  The choice should be made based on the value of another variable called isMale.
 */
-
-let gender1 = "female";
-let gender2 = "male";
+let isMale = true;
+let myGender = isMale ? "male" : "female";
+console.log(myGender);
 
 
 /*EX 2
@@ -14,13 +14,28 @@ let gender2 = "male";
 */
 
 let value1 = 8
-let value2 = 16
+let value2 = 5
+let oneEight = value1 === 8 || value2 === 8;
+let substraction = value1 + value2 ===8 || value1 - value2;
+let oneOrSubstract = oneEight || substraction;
+console.log("number",oneOrSubstract); 
+
+// another example
+
+let varx = 8
+let vary = 3
+if (varx ===8 || vary === 8|| vary+varx === 8 || vary-varx ===8){
+    console.log("condition is true")
+} else{
+    console.log ("condition is false");
+}
 
 /*EX 3
  Create a variable and assign to it the concatenation of two strings.
 */
 
-/* WRITE YOUR ANSWER HERE */
+let strings = "string1" + "string2"
+console.log("the ",strings)
 
 /*EX 4
  Create three variables and assign a numerical value to each one of them. 
@@ -61,11 +76,20 @@ console.log("value ", (number1 + number2) / 2);
 let longNumber = "longlong"
 let shortNumber = "short"
 
+if (longNumber.length > shortNumber.length) {
+    console.log("longNumber is longer than shortNumber")
+}else{
+    console.log("shortNumber is longer than longNumber")
+}
+
 /*EX 7
  Write a piece of code for checking if a given value is a integer or not.
 */
 
-/* WRITE YOUR ANSWER HERE */
+let value_1 = 9.77
+let value_2 = 9
+console.log(parseInt(value_1) === value_1);
+console.log(parseInt(value_2) === value_2);
 
 /*EX 8
  Write a piece of code for calculating a certain percentage of a given number.
@@ -80,4 +104,8 @@ console.log("value is ", number * 0.55);
 */
 
 let numberEvenOrOdd = 14;
-console.log(numberEvenOrOdd % 2);
+if(numberEvenOrOdd % 2 === 0){
+    console.log("The number is even");
+} else{
+    console.log("The number is not even");
+}

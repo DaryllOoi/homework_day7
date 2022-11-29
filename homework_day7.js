@@ -61,10 +61,8 @@ console.log("new value is :", newValue);
 
 let name1 = "john";
 let name2 = "John";
-console.log("verifying :", name1 === name2);
-const sentence = "John";
-console.log(sentence.toLowerCase[name2]);
-console.log("verifying 2nd time :", name1 === name2);
+console.log("Name1 Name2 1st time :", (name1) === (name2));
+console.log("verifying 2nd time :", name1 === name2.toLowerCase());
 
 /* EXERCISE 8
  Create a variable named x, and assign to it a numeric value less than 10.
